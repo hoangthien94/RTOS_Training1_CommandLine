@@ -1,0 +1,15 @@
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\utils\uartstdio.c
+.\objects\uartstdio.o: E:\Install\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\uartstdio.o: E:\Install\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uartstdio.o: E:\Install\Keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\inc/hw_ints.h
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\inc/hw_memmap.h
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\inc/hw_types.h
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\inc/hw_uart.h
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib/debug.h
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib/interrupt.h
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib/rom.h
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib/rom_map.h
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib/sysctl.h
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib/uart.h
+.\objects\uartstdio.o: C:\ti\TivaWare_C_Series-2.1.0.12573\utils/uartstdio.h

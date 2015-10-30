@@ -1,0 +1,417 @@
+Component: ARM Compiler 5.05 update 1 (build 106) Tool: armlink [4d0efa]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.CMD_echo) refers to uartstdio.o(i.UARTprintf) for UARTprintf
+    main.o(i.CMD_help) refers to uartstdio.o(i.UARTprintf) for UARTprintf
+    main.o(i.CMD_help) refers to main.o(.data) for g_psCmdTable
+    main.o(i.CMD_led) refers to strcmp.o(.text) for strcmp
+    main.o(i.ConfigureUART) refers to uartstdio.o(i.UARTStdioConfig) for UARTStdioConfig
+    main.o(i.main) refers to main.o(i.ConfigureUART) for ConfigureUART
+    main.o(i.main) refers to uartstdio.o(i.UARTprintf) for UARTprintf
+    main.o(i.main) refers to uartstdio.o(i.UARTPeek) for UARTPeek
+    main.o(i.main) refers to uartstdio.o(i.UARTgets) for UARTgets
+    main.o(i.main) refers to cmdline.o(i.CmdLineProcess) for CmdLineProcess
+    main.o(i.main) refers to main.o(.bss) for ui8InputBuffer
+    main.o(.data) refers to main.o(.conststring) for .conststring
+    main.o(.data) refers to main.o(i.CMD_help) for CMD_help
+    main.o(.data) refers to main.o(i.CMD_echo) for CMD_echo
+    main.o(.data) refers to main.o(i.CMD_led) for CMD_led
+    startup_rvmdk.o(RESET) refers to startup_rvmdk.o(STACK) for StackMem
+    startup_rvmdk.o(RESET) refers to uartstdio.o(i.UARTStdioIntHandler) for UARTStdioIntHandler
+    startup_rvmdk.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    cmdline.o(i.CmdLineProcess) refers to strcmp.o(.text) for strcmp
+    cmdline.o(i.CmdLineProcess) refers to cmdline.o(.bss) for g_ppcArgv
+    cmdline.o(i.CmdLineProcess) refers to main.o(.data) for g_psCmdTable
+    uartstdio.o(i.UARTEchoSet) refers to uartstdio.o(.data) for g_bDisableEcho
+    uartstdio.o(i.UARTFlushRx) refers to uartstdio.o(.data) for g_ui32UARTRxReadIndex
+    uartstdio.o(i.UARTFlushTx) refers to uartstdio.o(i.IsBufferEmpty) for IsBufferEmpty
+    uartstdio.o(i.UARTFlushTx) refers to uartstdio.o(.data) for g_ui32UARTTxReadIndex
+    uartstdio.o(i.UARTPeek) refers to uartstdio.o(i.GetBufferCount) for GetBufferCount
+    uartstdio.o(i.UARTPeek) refers to uartstdio.o(.data) for g_ui32UARTRxWriteIndex
+    uartstdio.o(i.UARTPeek) refers to uartstdio.o(.bss) for g_pcUARTRxBuffer
+    uartstdio.o(i.UARTPrimeTransmit) refers to uartstdio.o(i.IsBufferEmpty) for IsBufferEmpty
+    uartstdio.o(i.UARTPrimeTransmit) refers to uartstdio.o(.data) for g_ui32UARTTxWriteIndex
+    uartstdio.o(i.UARTPrimeTransmit) refers to uartstdio.o(.constdata) for g_ui32UARTInt
+    uartstdio.o(i.UARTPrimeTransmit) refers to uartstdio.o(.bss) for g_pcUARTTxBuffer
+    uartstdio.o(i.UARTRxBytesAvail) refers to uartstdio.o(i.GetBufferCount) for GetBufferCount
+    uartstdio.o(i.UARTRxBytesAvail) refers to uartstdio.o(.data) for g_ui32UARTRxWriteIndex
+    uartstdio.o(i.UARTStdioConfig) refers to uartstdio.o(i.UARTFlushRx) for UARTFlushRx
+    uartstdio.o(i.UARTStdioConfig) refers to uartstdio.o(i.UARTFlushTx) for UARTFlushTx
+    uartstdio.o(i.UARTStdioConfig) refers to uartstdio.o(.constdata) for g_ui32UARTPeriph
+    uartstdio.o(i.UARTStdioConfig) refers to uartstdio.o(.data) for g_ui32Base
+    uartstdio.o(i.UARTStdioIntHandler) refers to uartstdio.o(i.UARTPrimeTransmit) for UARTPrimeTransmit
+    uartstdio.o(i.UARTStdioIntHandler) refers to uartstdio.o(i.IsBufferEmpty) for IsBufferEmpty
+    uartstdio.o(i.UARTStdioIntHandler) refers to uartstdio.o(i.UARTwrite) for UARTwrite
+    uartstdio.o(i.UARTStdioIntHandler) refers to uartstdio.o(i.IsBufferFull) for IsBufferFull
+    uartstdio.o(i.UARTStdioIntHandler) refers to uartstdio.o(.data) for g_ui32Base
+    uartstdio.o(i.UARTStdioIntHandler) refers to uartstdio.o(.bss) for g_pcUARTRxBuffer
+    uartstdio.o(i.UARTTxBytesFree) refers to uartstdio.o(i.GetBufferCount) for GetBufferCount
+    uartstdio.o(i.UARTTxBytesFree) refers to uartstdio.o(.data) for g_ui32UARTTxWriteIndex
+    uartstdio.o(i.UARTgetc) refers to uartstdio.o(i.IsBufferEmpty) for IsBufferEmpty
+    uartstdio.o(i.UARTgetc) refers to uartstdio.o(.data) for g_ui32UARTRxWriteIndex
+    uartstdio.o(i.UARTgetc) refers to uartstdio.o(.bss) for g_pcUARTRxBuffer
+    uartstdio.o(i.UARTgets) refers to uartstdio.o(i.IsBufferEmpty) for IsBufferEmpty
+    uartstdio.o(i.UARTgets) refers to uartstdio.o(.data) for g_ui32UARTRxWriteIndex
+    uartstdio.o(i.UARTgets) refers to uartstdio.o(.bss) for g_pcUARTRxBuffer
+    uartstdio.o(i.UARTprintf) refers to uartstdio.o(i.UARTvprintf) for UARTvprintf
+    uartstdio.o(i.UARTvprintf) refers to uartstdio.o(i.UARTwrite) for UARTwrite
+    uartstdio.o(i.UARTvprintf) refers to uartstdio.o(.constdata) for g_pcHex
+    uartstdio.o(i.UARTwrite) refers to uartstdio.o(i.IsBufferFull) for IsBufferFull
+    uartstdio.o(i.UARTwrite) refers to uartstdio.o(i.IsBufferEmpty) for IsBufferEmpty
+    uartstdio.o(i.UARTwrite) refers to uartstdio.o(i.UARTPrimeTransmit) for UARTPrimeTransmit
+    uartstdio.o(i.UARTwrite) refers to uartstdio.o(.data) for g_ui32UARTTxWriteIndex
+    uartstdio.o(i.UARTwrite) refers to uartstdio.o(.bss) for g_pcUARTTxBuffer
+    uartstdio.o(.constdata) refers to uartstdio.o(.conststring) for .conststring
+    ustdlib.o(i.ulocaltime) refers to ustdlib.o(.constdata) for g_psDaysToMonth
+    ustdlib.o(i.umktime) refers to ustdlib.o(i.ulocaltime) for ulocaltime
+    ustdlib.o(i.umktime) refers to ustdlib.o(i.ucmptime) for ucmptime
+    ustdlib.o(i.urand) refers to ustdlib.o(.data) for g_iRandomSeed
+    ustdlib.o(i.usnprintf) refers to ustdlib.o(i.uvsnprintf) for uvsnprintf
+    ustdlib.o(i.usprintf) refers to ustdlib.o(i.uvsnprintf) for uvsnprintf
+    ustdlib.o(i.usrand) refers to ustdlib.o(.data) for g_iRandomSeed
+    ustdlib.o(i.ustrcasecmp) refers to ustdlib.o(i.ustrncasecmp) for ustrncasecmp
+    ustdlib.o(i.ustrcmp) refers to ustdlib.o(i.ustrncmp) for ustrncmp
+    ustdlib.o(i.ustrstr) refers to ustdlib.o(i.ustrlen) for ustrlen
+    ustdlib.o(i.ustrstr) refers to ustdlib.o(i.ustrncmp) for ustrncmp
+    ustdlib.o(i.ustrtof) refers to ustdlib.o(.constdata) for g_pfExponents
+    ustdlib.o(i.uvsnprintf) refers to ustdlib.o(i.ustrncpy) for ustrncpy
+    ustdlib.o(i.uvsnprintf) refers to ustdlib.o(.constdata) for g_pcHex
+    ustdlib.o(.constdata) refers to ustdlib.o(.conststring) for .conststring
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_rvmdk.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_rvmdk.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup_rvmdk.o(HEAP), (0 bytes).
+    Removing startup_rvmdk.o(.text), (0 bytes).
+    Removing uartstdio.o(i.UARTEchoSet), (16 bytes).
+    Removing uartstdio.o(i.UARTRxBytesAvail), (24 bytes).
+    Removing uartstdio.o(i.UARTTxBytesFree), (28 bytes).
+    Removing uartstdio.o(i.UARTgetc), (56 bytes).
+    Removing ustdlib.o(i.ucmptime), (162 bytes).
+    Removing ustdlib.o(i.ulocaltime), (172 bytes).
+    Removing ustdlib.o(i.umktime), (84 bytes).
+    Removing ustdlib.o(i.urand), (36 bytes).
+    Removing ustdlib.o(i.usnprintf), (38 bytes).
+    Removing ustdlib.o(i.usprintf), (38 bytes).
+    Removing ustdlib.o(i.usrand), (12 bytes).
+    Removing ustdlib.o(i.ustrcasecmp), (20 bytes).
+    Removing ustdlib.o(i.ustrcmp), (20 bytes).
+    Removing ustdlib.o(i.ustrlen), (16 bytes).
+    Removing ustdlib.o(i.ustrncasecmp), (94 bytes).
+    Removing ustdlib.o(i.ustrncmp), (58 bytes).
+    Removing ustdlib.o(i.ustrncpy), (42 bytes).
+    Removing ustdlib.o(i.ustrstr), (44 bytes).
+    Removing ustdlib.o(i.ustrtof), (516 bytes).
+    Removing ustdlib.o(i.ustrtoul), (212 bytes).
+    Removing ustdlib.o(i.uvsnprintf), (708 bytes).
+    Removing ustdlib.o(.constdata), (76 bytes).
+    Removing ustdlib.o(.conststring), (17 bytes).
+    Removing ustdlib.o(.data), (4 bytes).
+
+26 unused section(s) (total 2493 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      648  startup_rvmdk.o(RESET)
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/string/strcmp.c         0x00000000   Number         0  strcmp.o ABSOLUTE
+    C:\ti\TivaWare_C_Series-2.1.0.12573\utils\cmdline.c 0x00000000   Number         0  cmdline.o ABSOLUTE
+    C:\ti\TivaWare_C_Series-2.1.0.12573\utils\uartstdio.c 0x00000000   Number         0  uartstdio.o ABSOLUTE
+    C:\ti\TivaWare_C_Series-2.1.0.12573\utils\ustdlib.c 0x00000000   Number         0  ustdlib.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    startup_rvmdk.s                          0x00000000   Number         0  startup_rvmdk.o ABSOLUTE
+    $v0                                      0x0000026c   Number         0  startup_rvmdk.o(RESET)
+    NmiSR                                    0x00000281   Thumb Code     0  startup_rvmdk.o(RESET)
+    FaultISR                                 0x00000283   Thumb Code     0  startup_rvmdk.o(RESET)
+    IntDefaultHandler                        0x00000285   Thumb Code     0  startup_rvmdk.o(RESET)
+    .ARM.Collect$$$$00000000                 0x00000288   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000288   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x0000028c   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00000290   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00000290   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00000290   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x00000298   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000298   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x00000298   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x00000298   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x0000029c   Section        0  strcmp.o(.text)
+    .text                                    0x000002b8   Section       36  init.o(.text)
+    i.CMD_echo                               0x000002dc   Section        0  main.o(i.CMD_echo)
+    i.CMD_help                               0x00000320   Section        0  main.o(i.CMD_help)
+    i.CMD_led                                0x000003a4   Section        0  main.o(i.CMD_led)
+    i.CmdLineProcess                         0x0000040c   Section        0  cmdline.o(i.CmdLineProcess)
+    i.ConfigureUART                          0x00000488   Section        0  main.o(i.ConfigureUART)
+    i.GetBufferCount                         0x000004f8   Section        0  uartstdio.o(i.GetBufferCount)
+    GetBufferCount                           0x000004f9   Thumb Code    26  uartstdio.o(i.GetBufferCount)
+    i.IsBufferEmpty                          0x00000512   Section        0  uartstdio.o(i.IsBufferEmpty)
+    IsBufferEmpty                            0x00000513   Thumb Code    20  uartstdio.o(i.IsBufferEmpty)
+    i.IsBufferFull                           0x00000526   Section        0  uartstdio.o(i.IsBufferFull)
+    IsBufferFull                             0x00000527   Thumb Code    30  uartstdio.o(i.IsBufferFull)
+    i.UARTFlushRx                            0x00000544   Section        0  uartstdio.o(i.UARTFlushRx)
+    i.UARTFlushTx                            0x00000574   Section        0  uartstdio.o(i.UARTFlushTx)
+    i.UARTPeek                               0x000005b8   Section        0  uartstdio.o(i.UARTPeek)
+    i.UARTPrimeTransmit                      0x00000600   Section        0  uartstdio.o(i.UARTPrimeTransmit)
+    UARTPrimeTransmit                        0x00000601   Thumb Code   118  uartstdio.o(i.UARTPrimeTransmit)
+    i.UARTStdioConfig                        0x0000068c   Section        0  uartstdio.o(i.UARTStdioConfig)
+    i.UARTStdioIntHandler                    0x00000754   Section        0  uartstdio.o(i.UARTStdioIntHandler)
+    i.UARTgets                               0x000008c8   Section        0  uartstdio.o(i.UARTgets)
+    i.UARTprintf                             0x00000928   Section        0  uartstdio.o(i.UARTprintf)
+    i.UARTvprintf                            0x00000944   Section        0  uartstdio.o(i.UARTvprintf)
+    i.UARTwrite                              0x00000b94   Section        0  uartstdio.o(i.UARTwrite)
+    i.__scatterload_copy                     0x00000c38   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00000c46   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00000c48   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.main                                   0x00000c58   Section        0  main.o(i.main)
+    .constdata                               0x00000e58   Section       40  uartstdio.o(.constdata)
+    g_pcHex                                  0x00000e58   Data           4  uartstdio.o(.constdata)
+    g_ui32UARTBase                           0x00000e5c   Data          12  uartstdio.o(.constdata)
+    g_ui32UARTInt                            0x00000e68   Data          12  uartstdio.o(.constdata)
+    g_ui32UARTPeriph                         0x00000e74   Data          12  uartstdio.o(.constdata)
+    .conststring                             0x00000e80   Section       86  main.o(.conststring)
+    .conststring                             0x00000ed8   Section       17  uartstdio.o(.conststring)
+    .data                                    0x20000000   Section       48  main.o(.data)
+    .data                                    0x20000030   Section       29  uartstdio.o(.data)
+    g_bDisableEcho                           0x20000030   Data           1  uartstdio.o(.data)
+    g_ui32UARTTxWriteIndex                   0x20000034   Data           4  uartstdio.o(.data)
+    g_ui32UARTTxReadIndex                    0x20000038   Data           4  uartstdio.o(.data)
+    g_ui32UARTRxWriteIndex                   0x2000003c   Data           4  uartstdio.o(.data)
+    g_ui32UARTRxReadIndex                    0x20000040   Data           4  uartstdio.o(.data)
+    g_ui32Base                               0x20000044   Data           4  uartstdio.o(.data)
+    g_ui32PortNum                            0x20000048   Data           4  uartstdio.o(.data)
+    bLastWasCR                               0x2000004c   Data           1  uartstdio.o(.data)
+    .bss                                     0x20000050   Section      128  main.o(.bss)
+    .bss                                     0x200000d0   Section       36  cmdline.o(.bss)
+    g_ppcArgv                                0x200000d0   Data          36  cmdline.o(.bss)
+    .bss                                     0x200000f4   Section     1152  uartstdio.o(.bss)
+    g_pcUARTTxBuffer                         0x200000f4   Data        1024  uartstdio.o(.bss)
+    g_pcUARTRxBuffer                         0x200004f4   Data         128  uartstdio.o(.bss)
+    STACK                                    0x20000578   Section     2048  startup_rvmdk.o(STACK)
+    StackMem                                 0x20000578   Data           0  startup_rvmdk.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  startup_rvmdk.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    Reset_Handler                            0x0000026d   Thumb Code     0  startup_rvmdk.o(RESET)
+    __main                                   0x00000289   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000289   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x0000028d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000291   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00000291   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00000291   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00000291   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000299   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000299   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    strcmp                                   0x0000029d   Thumb Code    28  strcmp.o(.text)
+    __scatterload                            0x000002b9   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x000002b9   Thumb Code     0  init.o(.text)
+    CMD_echo                                 0x000002dd   Thumb Code    46  main.o(i.CMD_echo)
+    CMD_help                                 0x00000321   Thumb Code    68  main.o(i.CMD_help)
+    CMD_led                                  0x000003a5   Thumb Code    92  main.o(i.CMD_led)
+    CmdLineProcess                           0x0000040d   Thumb Code   114  cmdline.o(i.CmdLineProcess)
+    ConfigureUART                            0x00000489   Thumb Code    96  main.o(i.ConfigureUART)
+    UARTFlushRx                              0x00000545   Thumb Code    38  uartstdio.o(i.UARTFlushRx)
+    UARTFlushTx                              0x00000575   Thumb Code    58  uartstdio.o(i.UARTFlushTx)
+    UARTPeek                                 0x000005b9   Thumb Code    58  uartstdio.o(i.UARTPeek)
+    UARTStdioConfig                          0x0000068d   Thumb Code   178  uartstdio.o(i.UARTStdioConfig)
+    UARTStdioIntHandler                      0x00000755   Thumb Code   332  uartstdio.o(i.UARTStdioIntHandler)
+    UARTgets                                 0x000008c9   Thumb Code    84  uartstdio.o(i.UARTgets)
+    UARTprintf                               0x00000929   Thumb Code    26  uartstdio.o(i.UARTprintf)
+    UARTvprintf                              0x00000945   Thumb Code   574  uartstdio.o(i.UARTvprintf)
+    UARTwrite                                0x00000b95   Thumb Code   146  uartstdio.o(i.UARTwrite)
+    __scatterload_copy                       0x00000c39   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00000c47   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00000c49   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    main                                     0x00000c59   Thumb Code   224  main.o(i.main)
+    Region$$Table$$Base                      0x00000eec   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000f0c   Number         0  anon$$obj.o(Region$$Table)
+    g_psCmdTable                             0x20000000   Data          48  main.o(.data)
+    ui8InputBuffer                           0x20000050   Data         128  main.o(.bss)
+    __initial_sp                             0x20000d78   Data           0  startup_rvmdk.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000289
+
+  Load Region LR_IROM (Base: 0x00000000, Size: 0x00000f5c, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region ER_IROM (Base: 0x00000000, Size: 0x00000f0c, Max: 0x00040000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000288   Code   RO          106    RESET               startup_rvmdk.o
+    0x00000288   0x00000000   Code   RO          358  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000288   0x00000004   Code   RO          363    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0000028c   0x00000004   Code   RO          366    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x00000290   0x00000000   Code   RO          368    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x00000290   0x00000000   Code   RO          370    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x00000290   0x00000008   Code   RO          371    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000298   0x00000000   Code   RO          373    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000298   0x00000000   Code   RO          375    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000298   0x00000004   Code   RO          364    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x0000029c   0x0000001c   Code   RO          361    .text               mc_w.l(strcmp.o)
+    0x000002b8   0x00000024   Code   RO          377    .text               mc_w.l(init.o)
+    0x000002dc   0x00000044   Code   RO            1    i.CMD_echo          main.o
+    0x00000320   0x00000084   Code   RO            2    i.CMD_help          main.o
+    0x000003a4   0x00000068   Code   RO            3    i.CMD_led           main.o
+    0x0000040c   0x0000007c   Code   RO          111    i.CmdLineProcess    cmdline.o
+    0x00000488   0x00000070   Code   RO            4    i.ConfigureUART     main.o
+    0x000004f8   0x0000001a   Code   RO          129    i.GetBufferCount    uartstdio.o
+    0x00000512   0x00000014   Code   RO          130    i.IsBufferEmpty     uartstdio.o
+    0x00000526   0x0000001e   Code   RO          131    i.IsBufferFull      uartstdio.o
+    0x00000544   0x00000030   Code   RO          133    i.UARTFlushRx       uartstdio.o
+    0x00000574   0x00000044   Code   RO          134    i.UARTFlushTx       uartstdio.o
+    0x000005b8   0x00000048   Code   RO          135    i.UARTPeek          uartstdio.o
+    0x00000600   0x0000008c   Code   RO          136    i.UARTPrimeTransmit  uartstdio.o
+    0x0000068c   0x000000c8   Code   RO          138    i.UARTStdioConfig   uartstdio.o
+    0x00000754   0x00000174   Code   RO          139    i.UARTStdioIntHandler  uartstdio.o
+    0x000008c8   0x00000060   Code   RO          142    i.UARTgets          uartstdio.o
+    0x00000928   0x0000001a   Code   RO          143    i.UARTprintf        uartstdio.o
+    0x00000942   0x00000002   PAD
+    0x00000944   0x00000250   Code   RO          144    i.UARTvprintf       uartstdio.o
+    0x00000b94   0x000000a4   Code   RO          145    i.UARTwrite         uartstdio.o
+    0x00000c38   0x0000000e   Code   RO          381    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00000c46   0x00000002   Code   RO          382    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00000c48   0x0000000e   Code   RO          383    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00000c56   0x00000002   PAD
+    0x00000c58   0x00000200   Code   RO            5    i.main              main.o
+    0x00000e58   0x00000028   Data   RO          147    .constdata          uartstdio.o
+    0x00000e80   0x00000056   Data   RO            7    .conststring        main.o
+    0x00000ed6   0x00000002   PAD
+    0x00000ed8   0x00000011   Data   RO          148    .conststring        uartstdio.o
+    0x00000ee9   0x00000003   PAD
+    0x00000eec   0x00000020   Data   RO          379    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM (Base: 0x20000000, Size: 0x00000d78, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000030   Data   RW            8    .data               main.o
+    0x20000030   0x0000001d   Data   RW          149    .data               uartstdio.o
+    0x2000004d   0x00000003   PAD
+    0x20000050   0x00000080   Zero   RW            6    .bss                main.o
+    0x200000d0   0x00000024   Zero   RW          112    .bss                cmdline.o
+    0x200000f4   0x00000480   Zero   RW          146    .bss                uartstdio.o
+    0x20000574   0x00000004   PAD
+    0x20000578   0x00000800   Zero   RW          104    STACK               startup_rvmdk.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       124         10          0          0         36       2068   cmdline.o
+       928        402         86         48        128       9517   main.o
+       648        622          0          0       2048        272   startup_rvmdk.o
+      1854        166         57         29       1152      11569   uartstdio.o
+
+    ----------------------------------------------------------------------
+      3556       1200        180         80       3368      23426   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         2          0          5          3          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+        28          0          0          0          0         76   strcmp.o
+
+    ----------------------------------------------------------------------
+       116         16          0          0          0        144   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       114         16          0          0          0        144   mc_w.l
+
+    ----------------------------------------------------------------------
+       116         16          0          0          0        144   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      3672       1216        180         80       3368      21974   Grand Totals
+      3672       1216        180         80       3368      21974   ELF Image Totals
+      3672       1216        180         80          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 3852 (   3.76kB)
+    Total RW  Size (RW Data + ZI Data)              3448 (   3.37kB)
+    Total ROM Size (Code + RO Data + RW Data)       3932 (   3.84kB)
+
+==============================================================================
+

@@ -1,0 +1,51 @@
+Dependencies for Project 'RTOS_Training1', Target 'Training 1 ': (DO NOT MODIFY !)
+F (.\main.c)(0x5633463E)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.0.12573 -IC:\ti\TivaWare_C_Series-2.1.0.12573\examples\boards\ek-tm4c123gxl --c99-I "E:\Workspace\Dropbox\Keil C\RTOS_Training1\RTE"-I E:\Install\Keil\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-I E:\Install\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="513" -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DUART_BUFFERED-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (E:\Install\Keil\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (E:\Install\Keil\ARM\ARMCC\include\stdbool.h)(0x54760110)
+I (E:\Install\Keil\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\inc\hw_ints.h)(0x554B0BE3)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\inc\hw_memmap.h)(0x554B0BE3)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\debug.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\eeprom.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\fpu.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\gpio.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\interrupt.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\pin_map.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\rom.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\sysctl.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\uart.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\rom_map.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\utils\ustdlib.h)(0x554B0BF6)
+I (E:\Install\Keil\ARM\ARMCC\include\stdarg.h)(0x5476010A)
+I (E:\Install\Keil\ARM\ARMCC\include\time.h)(0x54760110)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\utils\uartstdio.h)(0x554B0BF6)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\utils\cmdline.h)(0x554B0BF5)
+F (.\startup_rvmdk.s)(0x56333816)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "E:\Workspace\Dropbox\Keil C\RTOS_Training1\RTE"-I E:\Install\Keil\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-I E:\Install\Keil\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 513" --pd "TM4C123GH6PM SETA 1"-o .\objects\startup_rvmdk.o --depend .\objects\startup_rvmdk.d)
+F (C:\ti\TivaWare_C_Series-2.1.0.12573\utils\cmdline.c)(0x554B0BF5)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.0.12573 -IC:\ti\TivaWare_C_Series-2.1.0.12573\examples\boards\ek-tm4c123gxl --c99-I "E:\Workspace\Dropbox\Keil C\RTOS_Training1\RTE"-I E:\Install\Keil\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-I E:\Install\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="513" -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DUART_BUFFERED-o .\objects\cmdline.o --omf_browse .\objects\cmdline.crf --depend .\objects\cmdline.d)
+I (E:\Install\Keil\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (E:\Install\Keil\ARM\ARMCC\include\stdbool.h)(0x54760110)
+I (E:\Install\Keil\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\utils\cmdline.h)(0x554B0BF5)
+F (C:\ti\TivaWare_C_Series-2.1.0.12573\utils\uartstdio.c)(0x554B0BF6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.0.12573 -IC:\ti\TivaWare_C_Series-2.1.0.12573\examples\boards\ek-tm4c123gxl --c99-I "E:\Workspace\Dropbox\Keil C\RTOS_Training1\RTE"-I E:\Install\Keil\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-I E:\Install\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="513" -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DUART_BUFFERED-o .\objects\uartstdio.o --omf_browse .\objects\uartstdio.crf --depend .\objects\uartstdio.d)
+I (E:\Install\Keil\ARM\ARMCC\include\stdbool.h)(0x54760110)
+I (E:\Install\Keil\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (E:\Install\Keil\ARM\ARMCC\include\stdarg.h)(0x5476010A)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\inc\hw_ints.h)(0x554B0BE3)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\inc\hw_memmap.h)(0x554B0BE3)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\inc\hw_types.h)(0x554B0BE3)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\inc\hw_uart.h)(0x554B0BE3)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\debug.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\interrupt.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\rom.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\rom_map.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\sysctl.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\uart.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\utils\uartstdio.h)(0x554B0BF6)
+F (C:\ti\TivaWare_C_Series-2.1.0.12573\utils\ustdlib.c)(0x554B0BF6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.0.12573 -IC:\ti\TivaWare_C_Series-2.1.0.12573\examples\boards\ek-tm4c123gxl --c99-I "E:\Workspace\Dropbox\Keil C\RTOS_Training1\RTE"-I E:\Install\Keil\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-I E:\Install\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="513" -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DUART_BUFFERED-o .\objects\ustdlib.o --omf_browse .\objects\ustdlib.crf --depend .\objects\ustdlib.d)
+I (E:\Install\Keil\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\debug.h)(0x554B0BB1)
+I (C:\ti\TivaWare_C_Series-2.1.0.12573\utils\ustdlib.h)(0x554B0BF6)
+I (E:\Install\Keil\ARM\ARMCC\include\stdarg.h)(0x5476010A)
+I (E:\Install\Keil\ARM\ARMCC\include\time.h)(0x54760110)
+F (C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\ccs\Debug\driverlib.lib)(0x554B0BB1)()
+F (.\Readme.txt)(0x56324BFF)()

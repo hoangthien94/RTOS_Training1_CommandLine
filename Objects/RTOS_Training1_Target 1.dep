@@ -1,0 +1,2 @@
+Dependencies for Project 'RTOS_Training1', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.c)(0x56324443)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-2.1.0.12573 C99-I "E:\Workspace\Dropbox\Keil C\RTOS_Training1\RTE"-I E:\Install\Keil\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-I E:\Install\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="513" -DTM4C123GH6PM -DTARGET_IS_BLIZZARD_RB1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)

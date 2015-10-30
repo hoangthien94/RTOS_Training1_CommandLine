@@ -1,0 +1,11 @@
+--cpu Cortex-M4.fp
+".\objects\main.o"
+".\objects\startup_rvmdk.o"
+".\objects\cmdline.o"
+".\objects\uartstdio.o"
+".\objects\ustdlib.o"
+"C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib\ccs\Debug\driverlib.lib"
+--library_type=microlib --strict --scatter ".\Objects\RTOS_Training1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\RTOS_Training1.map" -o .\Objects\RTOS_Training1.axf
